@@ -66,7 +66,7 @@ action = ActionChains(browser)
 action.send_keys(Keys.ENTER)
 
 mailcon = browser.find_element_by_xpath('/html/body/div[2]/div[10]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/div[1]/div/div[3]/div[2]/div[2]/div[1]/div/div/div')
-x = 10
+
 mailcon.send_keys('Найдено ',list,' писем с темой "Simbirsoft Тестовое задание. Беликов')
 
 mailsend = browser.find_element_by_xpath('/html/body/div[2]/div[10]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/div[2]/div/div[1]/div[1]/button').click()
